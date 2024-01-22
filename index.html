@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos do Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e4e4e4;
+        }
+
+        #card-border{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img src="./images/slide1.png" alt="Carro 1" class="d-block w-100">
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img src="./images/slide2.png" alt="Carro 2" class="d-block w-100">
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img src="./images/slide3.png" alt="Carro 3" class="d-block w-100">
+            </div>
+        </div>
+        <button data-bs-target="#carousel1" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel1" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel1" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" id="card-border">
+                <h1>Porsche</h1>
+                <div class="card text-bg-dark">
+                    <div class="card-body">
+                        <h4 class="card-title">Oferta Black Friday</h4>
+                        <p class="card-text">Ofertas imperdíveis para a linha de carros da Porsche! Venha conferir!</p>
+                        <a href="#" class="btn btn-primary">Conferir</a>
+                    </div>
+                </div>
+                <p>Porsche - 912 E (1976). 912 E (1976) <br> Porsche - 911 Turbo (1975-89). 911 Turbo (1975-89) <br> Porsche - 924 (1976-88). 924 (1976-88) <br> Porsche - 924 Turbo (1979-84).</p>
+                <a href="#" class="btn btn-primary">Conferir a seção</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" id="card-border">
+                <h1>Ford Ranger</h1>
+                <p>Modelos disponíveis: <br> Ranger XL 2.0 4x4 MT <br>
+                    Ranger XLS 2.0 4x2 AT <br>
+                    Ranger XLS 2.0 4x4 AT <br>
+                    Ranger XLS 3.0 V6 4x4 AT <br>
+                    Ranger XLT 3.0 V6 4x4 AT <br>
+                    Ranger Limited 3.0 V6 4x4 AT <br></p>
+                    <a href="#" class="btn btn-primary">Conferir a seção</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" id="card-border">
+                <h1>Ford GT</h1>
+                <p>Ford GT40 MK IV 2023</p>
+                <a href="#" class="btn btn-primary">Conferir modelo</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
